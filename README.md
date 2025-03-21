@@ -42,17 +42,13 @@ Este projeto tem como objetivo rodar o jogo DOOM dentro de qualquer mapa do Goog
    sudo apt-get install wmctrl
    ```
 
-4. Instale qualquer PORT do jogo DOOM: ex (PrBoom, Chocolate DOOm, doomgeneric)
+## Executando o DOOM Port
 
-## Executando o Servidor
+1. Instale qualquer PORT do jogo DOOM: ex (PrBoom, Chocolate DOOm, [doomgeneric](https://github.com/ozkl/doomgeneric)
 
-1. Inicie o servidor WebSocket:
-
-   ```sh
-   python server.py
-   ```
-
-   O servidor irá iniciar o DOOM em modo janela e começar a capturar a tela, convertendo os frames para ASCII e enviando-os via WebSocket.
+```sh
+    ./doomgeneric
+```
 
 ## Executando o Server
 
@@ -65,7 +61,7 @@ Este projeto tem como objetivo rodar o jogo DOOM dentro de qualquer mapa do Goog
 
 ## Testando o Server
 
-1. Voce pode executar o client html disponivel em `web/index.html` no intuito de que o websocket esta rodando e entregando os frames capturados do jogo.
+1. Voce pode executar o client html disponivel em `web/index.html` na intensao de verificar se o websocket esta rodando e entregando os frames capturados do jogo.
 
 ## Executando o WebDriver
 
@@ -77,8 +73,8 @@ dart run bin/driver
 
 ## Estrutura do Projeto
 
-- [driver.dart](http://_vscodecontentref_/1): Código do cliente WebSocket que recebe e exibe os frames em ASCII.
-- [server.dart](http://_vscodecontentref_/2): Código do servidor WebSocket que captura a tela do DOOM, converte para ASCII e envia os frames.
+- [driver.dart](http://_vscodecontentref_/1): Cliente WebSocket que recebe e exibe os frames em ASCII.
+- [server.dart](http://_vscodecontentref_/2): Servidor WebSocket que captura a tela do DOOM, converte para ASCII e envia os frames.
 - [doomgeneric](https://github.com/ozkl/doomgeneric): Port do DOOM utilizado para obter os frames do jogo
 
 ## Observações
