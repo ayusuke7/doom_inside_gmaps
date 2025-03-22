@@ -28,7 +28,12 @@ void main(List<String> args) async {
   );
   final page = await browser.newPage();
 
-  // Go to a page and wait to be fully loaded
+  await page.goto('https://google.com/maps', wait: Until.networkIdle);
+  await page.waitForSelector('#searchboxinput');
+  await page.type('#searchboxinput', target.search);
+
+  await Future.delayed(Duration(seconds: 1));
+
   await page.goto(target.url, wait: Until.networkIdle);
   await page.waitForSelector('#scene');
 

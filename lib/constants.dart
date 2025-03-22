@@ -6,6 +6,7 @@ final fiapSP = Coordinates(
   top: '57px',
   left: '32.3%',
   transform: 'perspective(300px) rotate3d(1.5, 0, 0.5, 18deg)',
+  search: 'Avenida Paulista, 1106, São Paulo, Google Maps',
 );
 
 final timeSquare = Coordinates(
@@ -16,6 +17,7 @@ final timeSquare = Coordinates(
   top: '21%',
   left: '27%',
   transform: 'perspective(1000px) rotateX(22deg) rotateY(45deg) skewX(357deg)',
+  search: 'Times Square, New York, Google Maps',
 );
 
 class Coordinates {
@@ -25,6 +27,7 @@ class Coordinates {
   final String top;
   final String left;
   final String transform;
+  final String search;
 
   Coordinates({
     required this.url,
@@ -33,5 +36,6 @@ class Coordinates {
     required this.top,
     required this.left,
     required this.transform,
+    required this.search,
   });
 }

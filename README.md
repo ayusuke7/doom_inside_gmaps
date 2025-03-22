@@ -2,7 +2,9 @@
 
 Este projeto tem como objetivo rodar o jogo DOOM dentro de qualquer mapa do Google Maps,utilizando um servidor WebSocket para capturar a tela do jogo e um cliente WebSocket para exibir os frames no terminal.
 
-![Sample Screenshot](screens/sample.gif)
+<img src="screens/thumbnail.png" alt="placeholder" width="600" height="300" />
+
+[Watch the video](https://youtu.be/pxGWiLnQ4S0)
 
 ## Requisitos
 
